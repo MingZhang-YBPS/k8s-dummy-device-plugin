@@ -141,7 +141,8 @@ func Register() error {
 		// PATH = path.Join(DevicePluginPath, endpoint)
 		Endpoint: "dummy.sock",
 		// Schedulable resource name.
-		ResourceName: "dummy/dummyDev",
+		// ResourceName: "dummy/dummyDev",
+		ResourceName: "nvidia.com/gpu",
 	}
 
 	_, err = client.Register(context.Background(), reqt)

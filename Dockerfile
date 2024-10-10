@@ -5,7 +5,7 @@ ENV build_date 2018-04-12
 ENV GOPATH /usr/
 RUN mkdir -p /usr/src/
 WORKDIR /usr/src/
-RUN git clone https://github.com/redhat-nfvpe/k8s-dummy-device-plugin.git
+RUN git clone https://github.com/MingZhang-YBPS/k8s-dummy-device-plugin.git
 WORKDIR /usr/src/k8s-dummy-device-plugin
 # RUN go build dummy.go
 RUN CGO_ENABLED=0 go build -a -o k8s-dummy-device-plugin dummy.go
